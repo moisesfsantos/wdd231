@@ -1,0 +1,22 @@
+/* Reset básico compatível com W3C */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.5;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input {
+    font-family: inherit;
+    font-size: 100%;
+}

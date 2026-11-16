@@ -1,31 +1,32 @@
-/* Estilos para telas maiores (768px ou mais) */
-#menu {
-    display: none;
-}
+@media only screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
 
-nav ul.navigation {
-    display: flex;
-    position: static;
-    width: auto;
-    background: none;
-    gap: 1.5rem;
-}
+    nav ul.navigation {
+        display: flex;
+        position: static;
+        width: auto;
+        background: none;
+        gap: 1.5rem;
+    }
 
-nav ul.navigation li a {
-    border-top: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-}
+    nav ul.navigation li a {
+        border-top: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
 
-.conteudo-sobre {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+    .conteudo-sobre {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
 }
