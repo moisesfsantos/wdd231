@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Página Inicial | Desenvolvimento Web</title>
+    <meta name="description" content="Página inicial da disciplina WDD 231 - Desenvolvimento Web Dinâmico, apresentando portfólio de cursos, projetos e informações acadêmicas.">
+    <meta name="author" content="Moisés Ferreira dos Santos">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css" media="(min-width: 768px)">
+
+    <!-- JavaScript Files with defer -->
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/curso.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <!-- Logotipo SVG simulado ou arquivo próprio -->
+            <svg class="logo" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true">
+                <path fill="#fff" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <span class="nome-autor">Moisés Ferreira dos Santos</span>
+        </div>
+        <button id="menu" aria-label="Menu de Navegação"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="ativa">Página Inicial</a></li>
+                <li><a href="#">Projeto da Câmara</a></li>
+                <li><a href="#">Projeto Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Página Inicial do Curso WDD 231</h1>
+
+        <section class="card sobre-mim">
+            <h2>Sobre Mim</h2>
+            <div class="conteudo-sobre">
+                <img src="imagens/perfil.png" alt="Foto de Perfil" width="150" height="150" loading="lazy">
+                <p>Profissional dedicado à tecnologia e automação, atualmente aprimorando conhecimentos em desenvolvimento de software e tecnologias web modernas através da BYU-Pathway Worldwide.</p>
+            </div>
+        </section>
+
+        <section class="card certificado">
+            <h2>Certificado de Desenvolvimento de Software</h2>
+            <div class="botoes-filtro">
+                <button id="todos">Todos os Cursos</button>
+                <button id="wdd">Cursos WDD</button>
+                <button id="cse">Cursos CSE</button>
+            </div>
+            <div id="container-cursos" class="grid-cursos">
+                <!-- Os cartões de curso serão injetados dinamicamente via JavaScript -->
+            </div>
+            <p id="total-creditos" class="creditos-info"></p>
+        </section>
+
+        <section class="card localizacao">
+            <h2>Recife - Pernambuco</h2>
+            <p>Localizado na bela capital pernambucana, polo de inovação e tecnologia (Porto Digital), combinando a paixão por sistemas elétricos e engenharia de software.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="redes-sociais">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <p>&copy;<span id="anoAtual"></span> | Moisés Ferreira dos Santos | Pernambuco, Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+</html>
