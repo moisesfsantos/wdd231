@@ -1,0 +1,67 @@
+{
+  "membros": [
+    {
+      "nome": "Porto Digital Inovação",
+      "endereco": "Rua do Apolo, 235 - Bairro do Recife, Recife - PE",
+      "telefone": "(81) 3419-8000",
+      "site": "https://www.portodigital.org",
+      "imagem": "empresa1.webp",
+      "nivel": 3,
+      "setor": "Tecnologia e Inovação"
+    },
+    {
+      "nome": "Engenharia & Automação Nordeste",
+      "endereco": "Av. Conde da Boa Vista, 1410 - Boa Vista, Recife - PE",
+      "telefone": "(81) 3222-4510",
+      "site": "https://exemplo-automacao.com.br",
+      "imagem": "empresa2.webp",
+      "nivel": 3,
+      "setor": "Automação Industrial"
+    },
+    {
+      "nome": "Café do Marco Zero",
+      "endereco": "Praça Rio Branco, 45 - Bairro do Recife, Recife - PE",
+      "telefone": "(81) 3031-1122",
+      "site": "https://exemplo-cafemarcozero.com.br",
+      "imagem": "empresa3.webp",
+      "nivel": 2,
+      "setor": "Gastronomia e Turismo"
+    },
+    {
+      "nome": "Logística Suape Express",
+      "endereco": "Av. Mascarenhas de Morais, 2800 - Imbiribeira, Recife - PE",
+      "telefone": "(81) 3341-9900",
+      "site": "https://exemplo-suapeexpress.com.br",
+      "imagem": "empresa4.webp",
+      "nivel": 2,
+      "setor": "Transporte e Logística"
+    },
+    {
+      "nome": "Clínica Saúde Capibaribe",
+      "endereco": "Rua das Graças, 312 - Graças, Recife - PE",
+      "telefone": "(81) 3241-7788",
+      "site": "https://exemplo-saudecapibaribe.com.br",
+      "imagem": "empresa5.webp",
+      "nivel": 2,
+      "setor": "Saúde e Bem-Estar"
+    },
+    {
+      "nome": "Livraria & Papelaria Boa Viagem",
+      "endereco": "Av. Conselheiro Aguiar, 1950 - Boa Viagem, Recife - PE",
+      "telefone": "(81) 3326-5544",
+      "site": "https://exemplo-livrariabv.com.br",
+      "imagem": "empresa6.webp",
+      "nivel": 1,
+      "setor": "Comércio e Educação"
+    },
+    {
+      "nome": "Solar Pernambuco Energia",
+      "endereco": "Av. Norte Miguel Arraes, 4120 - Casa Amarela, Recife - PE",
+      "telefone": "(81) 3268-3311",
+      "site": "https://exemplo-solarpe.com.br",
+      "imagem": "empresa7.webp",
+      "nivel": 1,
+      "setor": "Energia Renovável"
+    }
+  ]
+}

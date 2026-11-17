@@ -1,0 +1,42 @@
+@media only screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    nav ul.navigation {
+        display: flex;
+        position: static;
+        width: auto;
+        background: none;
+        gap: 1rem;
+    }
+
+    nav ul.navigation li a {
+        border-top: none;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+    }
+
+    #container-membros.lista .cartao-membro {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1.2fr 1.5fr 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 2rem 3rem;
+    }
+
+    .footer-dev {
+        text-align: right;
+    }
+}
