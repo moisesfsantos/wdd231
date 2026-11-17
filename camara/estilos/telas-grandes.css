@@ -40,3 +40,25 @@
         text-align: right;
     }
 }
+
+/* Layout Desktop da Página Inicial */
+    .hero img {
+        height: 420px;
+    }
+
+    .hero-conteudo {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        max-width: 520px;
+        text-align: left;
+        border-radius: 8px;
+    }
+
+    .hero-conteudo h1 {
+        font-size: 2rem;
+    }
+
+    .painel-inicio {
+        grid-template-columns: 2fr 1fr 1fr;
+    }

@@ -261,3 +261,194 @@ footer p {
     text-decoration: none;
     font-weight: 700;
 }
+
+/* === ESTILOS DA PÁGINA INICIAL === */
+.hero {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.hero img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.hero-conteudo {
+    background-color: rgba(11, 37, 69, 0.9);
+    color: #FFFFFF;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.hero-conteudo h1 {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.hero-conteudo p {
+    margin: 0 0 1.25rem 0;
+    font-size: 1rem;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: 6px;
+}
+
+.btn-cta:hover {
+    background-color: #FFFFFF;
+}
+
+.painel-inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.card-painel {
+    background-color: var(--cor-cartao);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.card-painel h2 {
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+}
+
+.lista-eventos {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.lista-eventos li {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--cor-borda);
+    padding-bottom: 0.65rem;
+}
+
+.lista-eventos li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.lista-eventos span {
+    font-size: 0.88rem;
+    color: #475569;
+}
+
+.info-clima {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info-clima img {
+    width: 64px;
+    height: 64px;
+    background-color: var(--cor-primaria);
+    border-radius: 8px;
+}
+
+.temp-destaque {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    margin: 0;
+}
+
+.desc-clima {
+    text-transform: capitalize;
+    margin: 0.25rem 0 0 0;
+}
+
+.lista-previsao {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.linha-previsao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--cor-borda);
+    padding-bottom: 0.5rem;
+}
+
+.linha-previsao:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.secao-destaques h2 {
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: 1.25rem;
+}
+
+.grade-destaques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.cartao-destaque {
+    background-color: var(--cor-cartao);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.cartao-destaque img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.4rem;
+}
+
+.cartao-destaque h3 {
+    margin: 0;
+    color: var(--cor-primaria);
+}
+
+.cartao-destaque p {
+    margin: 0;
+    font-size: 0.92rem;
+}
+
+.cartao-destaque a {
+    color: var(--cor-primaria);
+    font-weight: 700;
+    word-break: break-all;
+}

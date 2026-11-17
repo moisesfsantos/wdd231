@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início | Câmara de Comércio do Recife</title>
+    <meta name="description" content="Bem-vindo à Câmara de Comércio do Recife. Conectamos empresas, promovemos eventos de negócios e impulsionamos o desenvolvimento econômico em Pernambuco.">
+    <meta name="author" content="Moisés Ferreira dos Santos">
+
+    <!-- Favicon -->
+    <link rel="icon" href="imagens/favicon.png" type="image/png">
+
+    <!-- Metadados Open Graph (Facebook) -->
+    <meta property="og:title" content="Câmara de Comércio do Recife | Desenvolvimento & Negócios">
+    <meta property="og:description" content="Associe-se à Câmara de Comércio do Recife e fortaleça sua rede de contatos, visibilidade empresarial e oportunidades de negócios.">
+    <meta property="og:image" content="https://moisesfsantos.github.io/wdd231/camara/imagens/og-camara.png">
+    <meta property="og:url" content="https://moisesfsantos.github.io/wdd231/camara/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Folhas de Estilo (Mesmos ficheiros da Semana 2) -->
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <!-- JavaScript específico da Página Inicial -->
+    <script src="scripts/inicio.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="imagens/favicon.png" alt="Logótipo Câmara de Comércio do Recife" width="44" height="44">
+            <div class="titulo-site">
+                <span class="nome-camara">Câmara de Comércio do Recife</span>
+                <span class="subtitulo-camara">Desenvolvimento &amp; Negócios</span>
+            </div>
+        </div>
+        <button id="menu" aria-label="Abrir ou fechar menu de navegação"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="ativa">Início</a></li>
+                <li><a href="diretorio.html">Diretório</a></li>
+                <li><a href="junte-se.html">Junte-se</a></li>
+                <li><a href="descubra.html">Descubra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Hero com <img> obrigatório e CTA -->
+        <section class="hero">
+            <img src="imagens/hero-recife.webp" alt="Vista panorâmica do centro empresarial e histórico do Recife" width="1200" height="450">
+            <div class="hero-conteudo">
+                <h1>Impulsionando os Negócios no Recife</h1>
+                <p>Conecte sua empresa aos principais líderes, eventos e oportunidades de Pernambuco.</p>
+                <a href="junte-se.html" class="btn-cta">Associe-se à Câmara</a>
+            </div>
+        </section>
+
+        <!-- Grade de Informações: Eventos + Clima Atual + Previsão 3 Dias -->
+        <div class="painel-inicio">
+            <section class="card-painel eventos">
+                <h2>Eventos Atuais</h2>
+                <ul class="lista-eventos">
+                    <li>
+                        <strong>Fórum de Inovação &amp; Tecnologia</strong>
+                        <span>24 de Novembro • 19h00 • Bairro do Recife</span>
+                    </li>
+                    <li>
+                        <strong>Café de Negócios e Networking</strong>
+                        <span>02 de Dezembro • 08h30 • Sede da Câmara</span>
+                    </li>
+                    <li>
+                        <strong>Workshop: Energia Solar &amp; Eficiência</strong>
+                        <span>10 de Dezembro • 14h00 • Auditório Boa Vista</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card-painel clima-atual">
+                <h2>Tempo Atual - Recife, PE</h2>
+                <div id="tempo-atual" class="info-clima">
+                    <p>Carregando dados meteorológicos...</p>
+                </div>
+            </section>
+
+            <section class="card-painel previsao-clima">
+                <h2>Previsão para 3 Dias</h2>
+                <div id="previsao-dias" class="lista-previsao">
+                    <p>Carregando previsão...</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Seção de Empresas em Destaque (Ouro e Prata aleatórios via JSON) -->
+        <section class="secao-destaques">
+            <h2>Empresas em Destaque</h2>
+            <div id="container-destaques" class="grade-destaques"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Câmara de Comércio do Recife</strong></p>
+            <p>Av. Alfredo Lisboa, 505 - Bairro do Recife, Recife - PE</p>
+            <p>contato@camararecife.org.br | (81) 3100-2026</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://github.com/moisesfsantos" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="footer-dev">
+            <p>WDD 231 Projeto de Classe | <strong>Moisés Ferreira dos Santos</strong></p>
+            <p>&copy;<span id="currentyear"></span> Câmara de Comércio do Recife</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
