@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Associação | Câmara de Comércio do Recife</title>
+    <meta name="description" content="Confirmação do envio do pedido de associação à Câmara de Comércio do Recife.">
+    <meta name="author" content="Moisés Ferreira dos Santos">
+
+    <!-- Favicon -->
+    <link rel="icon" href="imagens/favicon.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Folhas de Estilo -->
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/agradecimento.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="imagens/favicon.png" alt="Logótipo Câmara de Comércio do Recife" width="44" height="44">
+            <div class="titulo-site">
+                <span class="nome-camara">Câmara de Comércio do Recife</span>
+                <span class="subtitulo-camara">Desenvolvimento &amp; Negócios</span>
+            </div>
+        </div>
+        <button id="menu" aria-label="Abrir ou fechar menu de navegação"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="diretorio.html">Diretório</a></li>
+                <li><a href="associacao.html" class="ativa">Junte-se</a></li>
+                <li><a href="descubra.html">Descubra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Obrigado pelo seu Pedido de Associação!</h1>
+        <section class="card-confirmacao">
+            <h2>Resumo dos Dados Enviados</h2>
+            <p>Recebemos sua solicitação com sucesso. Nossa equipe entrará em contato em breve para concluir sua integração.</p>
+            <div id="dados-enviados" class="lista-confirmacao"></div>
+            <a href="index.html" class="btn-cta">Voltar à Página Inicial</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Câmara de Comércio do Recife</strong></p>
+            <p>Av. Alfredo Lisboa, 505 - Bairro do Recife, Recife - PE</p>
+            <p>contato@camararecife.org.br | (81) 3100-2026</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://github.com/moisesfsantos" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="footer-dev">
+            <p>WDD 231 Projeto de Classe | <strong>Moisés Ferreira dos Santos</strong></p>
+            <p>&copy;<span id="currentyear"></span> Câmara de Comércio do Recife</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

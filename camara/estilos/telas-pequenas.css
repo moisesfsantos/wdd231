@@ -261,3 +261,152 @@ footer p {
     text-decoration: none;
     font-weight: 700;
 }
+
+/* === PÁGINA ASSOCIAÇÃO & CONFIRMAÇÃO === */
+.layout-associacao {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.form-associacao {
+    background-color: var(--cor-cartao);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-associacao label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    gap: 0.35rem;
+}
+
+.form-associacao input,
+.form-associacao select,
+.form-associacao textarea {
+    padding: 0.7rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--cor-texto);
+}
+
+.form-associacao input:required:invalid {
+    border-left: 4px solid #DC2626;
+}
+
+.form-associacao input:required:valid {
+    border-left: 4px solid #16A34A;
+}
+
+.btn-enviar {
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.btn-enviar:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.niveis-associacao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.niveis-associacao h2 {
+    margin: 0;
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+@keyframes entradaCartao {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-nivel {
+    background-color: var(--cor-cartao);
+    border: 1px solid var(--cor-borda);
+    border-left: 6px solid var(--cor-secundaria);
+    border-radius: 8px;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    animation: entradaCartao 0.8s ease-out forwards;
+}
+
+.card-nivel h3 {
+    margin: 0 0 0.4rem 0;
+    color: var(--cor-primaria);
+}
+
+.card-nivel p {
+    margin: 0 0 0.9rem 0;
+    font-size: 0.95rem;
+}
+
+.btn-modal,
+.fechar-modal {
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.modal-beneficios {
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 450px;
+    width: 90%;
+    color: var(--cor-texto);
+}
+
+.modal-beneficios::backdrop {
+    background-color: rgba(11, 37, 69, 0.75);
+}
+
+.modal-beneficios h3 {
+    margin-top: 0;
+    color: var(--cor-primaria);
+}
+
+.card-confirmacao {
+    background-color: var(--cor-cartao);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 1.75rem;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.lista-confirmacao {
+    background-color: var(--cor-fundo);
+    border-left: 4px solid var(--cor-primaria);
+    padding: 1rem;
+    margin: 1.25rem 0;
+}

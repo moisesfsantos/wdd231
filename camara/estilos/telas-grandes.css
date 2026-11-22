@@ -39,4 +39,9 @@
     .footer-dev {
         text-align: right;
     }
+    
+    .layout-associacao {
+        grid-template-columns: 3fr 2fr;
+        align-items: start;
+    }
 }
