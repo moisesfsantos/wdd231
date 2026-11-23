@@ -68,7 +68,7 @@
 
                 <label>
                     Cargo na Organização
-                    <input type="text" name="cargo" title="Mínimo de 7 caracteres usando apenas letras, hífens e espaços" autocomplete="job-title" pattern="[A-Za-zÀ-ÿ\-\s]{7,}">
+                    <input type="text" name="cargo" title="Mínimo de 7 caracteres usando apenas letras, hífens e espaços" autocomplete="cargo" pattern="[A-Za-zÀ-ÿ\-\s]{7,}">
                 </label>
 
                 <label>
@@ -83,10 +83,9 @@
 
                 <label>
                     Nome da Empresa / Organização *
-                    <input type="text" name="organizacao" title="Digite o nome da sua empresa ou organização" autocomplete="organization" required>
+                    <input type="text" name="organizacao" title="Digite o nome da sua empresa ou organização" autocomplete="organizacao" required>
                 </label>
-
-                <fieldset class="grupo-nivel">
+            <fieldset class="grupo-nivel">
     <legend>Nível de Associação *</legend>
     <label class="opcao-radio">
         <input type="radio" name="nivel" value="np" required>
