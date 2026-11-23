@@ -83,19 +83,28 @@
 
                 <label>
                     Nome da Empresa / Organização *
-                    <input type="text" name="organizacao" title="Digite o nome da sua empresa ou organização" autocomplete="organization" required>
+                    <input type="text" name="organizacao" title="Digite o nome da sua empresa ou organização" autocomplete="organizacao" required>
                 </label>
 
-                <label>
-                    Nível de Associação *
-                    <select name="nivel" title="Selecione o nível de associação desejado" required>
-                        <option value="" disabled selected>Selecione um nível...</option>
-                        <option value="np">Associação NP (Sem Fins Lucrativos - Isento)</option>
-                        <option value="bronze">Associação Bronze</option>
-                        <option value="silver">Associação Prata</option>
-                        <option value="gold">Associação Ouro</option>
-                    </select>
-                </label>
+                <fieldset class="grupo-nivel">
+    <legend>Nível de Associação *</legend>
+    <label class="opcao-radio">
+        <input type="radio" name="nivel" value="np" required>
+        Associação NP (Sem Fins Lucrativos - Isento)
+    </label>
+    <label class="opcao-radio">
+        <input type="radio" name="nivel" value="bronze">
+        Associação Bronze
+    </label>
+    <label class="opcao-radio">
+        <input type="radio" name="nivel" value="silver">
+        Associação Prata
+    </label>
+    <label class="opcao-radio">
+        <input type="radio" name="nivel" value="gold">
+        Associação Ouro
+    </label>
+                </fieldset>
 
                 <label>
                     Descrição da Atividade / Organização
